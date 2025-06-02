@@ -1,0 +1,13 @@
+@mixin button-gradient {
+  background: linear-gradient(90deg, $primary, $secondary);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
