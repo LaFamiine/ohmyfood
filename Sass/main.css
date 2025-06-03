@@ -4,24 +4,28 @@ footer {
 
 header {
   text-align: center;
+  font-family: "Roboto", sans-serif;
 }
-header__location {
-  background-color: red;
-  padding: 10px 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-header a {
-  color: black;
+header_location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
 }
 
 .hero {
   text-align: center;
   font-family: "Roboto", sans-serif;
 }
-.hero__button {
-  background-color: linear rgb(255, 121, 218) rgb(147, 86, 220);
-  border-radius: 30px;
-  color: #af1c1c;
+.hero_button {
+  background: linear-gradient(#9356dc, #ff79da);
+  padding: 16px 32px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 .hero h1 {
   font-size: 24px;

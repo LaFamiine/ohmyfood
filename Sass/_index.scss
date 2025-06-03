@@ -1,11 +1,16 @@
 .hero {
   text-align: center;
   font-family: $fontFamily;
+  
+  &_button {
+    background: linear-gradient(#9356dc, #ff79da);
+  
+  padding: 16px 32px;
+  border: none;
+  border-radius: 25px;    
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
 
-  &__button {
-    background-color: linear rgba(255, 121, 218, 1) rgba(147, 86, 220, 1);
-    border-radius: 30px;
-    color: #af1c1c;
   }
 
   h1 {
