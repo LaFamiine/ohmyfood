@@ -1,16 +1,20 @@
 .hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   font-family: $fontFamily;
-  
-  &_button {
-    background: linear-gradient(#9356dc, #ff79da);
-  
-  padding: 16px 32px;
-  border: none;
-  border-radius: 25px;    
-  font-size: 16px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
+  background: $gray3;
+  padding-bottom: 30px;
 
+  &_button {
+    width: 49%;
+    background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+    padding: 16px 32px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   }
 
   h1 {
@@ -26,67 +30,104 @@
     color: #666;
     margin-bottom: 24px;
   }
+
+  a {
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 24px;
+    text-decoration: none;
+  }
 }
 
 .steps {
   font-family: $fontFamily;
-  padding: 32px 16px;
+  padding: 32px 22px;
+  display: flex;
+  flex-direction: column;
 
   h2 {
     font-size: 24px;
     margin-bottom: 8px;
   }
+  &_number {
+    position: relative;
+    right: 9px;
+    background: #9b4dff;
+    color: white;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   li {
     background: #f6f6f6;
     border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
+    padding: 10px 0px;
+    margin: 10px 10px 10px 0;
     display: flex;
-    justify-content: space-around;
+    gap: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
+
+
 }
 
 .restaurants {
-  padding: 32px 16px;
+  width: 100%;
+  padding: 33px 0px;
   background-color: #f6f6f6;
   font-family: $fontFamily;
 
   h3 {
     font-size: 18px;
-    margin: 10px;
+    margin: 15px 9px 0px;
   }
 
-p {
-    margin: 10PX;
+  .fa-regular {
+    padding-right: 20px;
+  }
+
+  .fa-solid {
+    padding-right: 20px;
+    color: #9356dc;
+  }
+
+  p {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 14px;
+    margin: 4px 0px 12px 10px;
     font-size: 17px;
   }
   img {
-    max-width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 15px 15px 0 0;
+    object-fit: cover;
+    width: 100%;
+    height: 174px;
+    display: block;
+    border-radius: 15px 15px 0 0;
   }
   .card {
+    width: 100%;
     background: white;
     border-radius: 15px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    
-
-
+    margin-bottom: 20px;
   }
-}
 
-.footer {
-  background-color: #333;
-  color: white;
-  padding: 32px 16px;
-  font-family: $fontFamily;
+  &_img_new {
+    position: relative;
+  }
 
-
-  p {
-    margin: 10PX;
-    font-size: 18px;
+  span {
+    position: absolute;
+    top: 118%;
+    right: 20px;
+    background-color: #a8edea; 
+    color: #008060;
+    font-weight: 600;
+    padding: 4px 10px;
+    font-size: 14px;
   }
 }
